@@ -46,6 +46,7 @@ operación seleccionada.
 
 servicefile = 'bus_routes_14000.csv'
 initialStation = None
+searchMethod = None
 
 # ___________________________________________________
 #  Menu principal
@@ -63,6 +64,10 @@ def printMenu():
     print("5- Hay camino entre estacion base y estación: ")
     print("6- Ruta de costo mínimo desde la estación base y estación: ")
     print("7- Estación que sirve a mas rutas: ")
+    # TODO mods Lab 11, asegurarse de completar las opciones 8, 9 y 10
+    print("8- Cambiar metodo de busqueda ('bfs' o 'dfs'):")
+    print("9- Existe un camino de busqueda entre base y estación: ")
+    print("10- Ruta de busqueda entre la estación base y estación: ")
     print("0- Salir")
     print("*******************************************")
 
@@ -84,6 +89,11 @@ def optionThree(cont):
 
 def optionFour(cont, initialStation):
     controller.minimumCostPaths(cont, initialStation)
+    # TODO mods Lab 11, conectar con la funcion del controller searchPaths
+    if searchMethod is not None:
+        pass
+    else:
+        pass
 
 
 def optionFive(cont, destStation):
@@ -109,6 +119,26 @@ def optionSeven(cont):
     maxvert, maxdeg = controller.servedRoutes(cont)
     print('Estación: ' + maxvert + '  Total rutas servidas: '
           + str(maxdeg))
+
+
+def optionEight(cont, smethod):
+    # TODO mods Lab 11, conectar con la funcion del controller searchPaths
+    pass
+
+
+def optionNine(cont, destStation):
+    # TODO mods Lab 11, conectar con la funcion del controller hasSearchPath
+    haspath = None
+    print(haspath)
+
+
+def optionTen(cont, destStation):
+    # TODO mods Lab 11, conectar con la funcion del controller searchPath
+    path = None
+    if path is not None:
+        pass
+    else:
+        print('No hay camino')
 
 
 """
@@ -147,6 +177,18 @@ def thread_cycle():
 
         elif int(inputs[0]) == 7:
             optionSeven(cont)
+
+        elif int(inputs[0]) == 8:
+            # TODO mods Lab 11, completar inputs opt 8
+            optionEight(cont)
+
+        elif int(inputs[0]) == 9:
+            # TODO mods Lab 11, completar inputs opt 9
+            optionNine(cont)
+
+        elif int(inputs[0]) == 10:
+            # TODO mods Lab 11, completar inputs opt 10
+            optionTen(cont)
 
         else:
             sys.exit(0)

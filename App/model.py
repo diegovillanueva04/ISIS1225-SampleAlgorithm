@@ -30,6 +30,7 @@ from DISClib.ADT import list as lt
 from DISClib.Algorithms.Graphs import scc
 from DISClib.Algorithms.Graphs import dijsktra as djk
 from DISClib.Utils import error as error
+# TODO mods Lab 11, agregar importaciones dfs y bfs
 assert config
 
 """
@@ -52,6 +53,7 @@ def newAnalyzer():
            vertice determinado a todos los otros vértices del grafo
     """
     try:
+        # TODO mods Lab 11, agregar llave "search" para usar dfs y bfs
         analyzer = {
             'stops': None,
             'connections': None,
@@ -188,6 +190,69 @@ def hasPath(analyzer, destStation):
     Se debe ejecutar primero la funcion minimumCostPaths
     """
     return djk.hasPathTo(analyzer['paths'], destStation)
+
+
+def searchPaths(analyzer, initialStation, method="dfs"):
+    """
+    searchPaths Calcula los caminos posibles desde una estacion de origen
+    y puede utilizar los algoritmos "dfs" o "bfs"
+
+    Args:
+        analyzer (dict): diccionario con las estructuras de datos del modelo
+        originStation (vertice): estacion de origen del recorrido
+        method (str, optional): algoritmo de busqueda. Por defecto es "dfs"
+
+    Returns:
+        dict: devuelve el analyzer del modelo
+    """
+    # TODO mods Lab 11, ejectutar DepthFirstSearch de dfs
+    if method == "dfs":
+        pass
+    # TODO mods Lab 11, ejectutar BreadhtFisrtSearch de bfs
+    elif method == "bfs":
+        pass
+    return analyzer
+
+
+def hasSearchPath(analyzer, destStation, method="dfs"):
+    """
+    hasSearchPath indica si existe un camino desde la estacion inicial a
+    la estación destino. Se debe ejecutar primero la funcion searchPaths()
+
+    Args:
+        analyzer (dict): diccionario con las estructuras de datos del modelo
+        destStation (vertice): estacion de destino para el recorrido
+        method (str, optional): algoritmo de busqueda. Por defecto es "dfs"
+    """
+    # TODO mods Lab 11, ejectutar hasPathTo por dfs
+    if method == "dfs":
+        pass
+    # TODO mods Lab 11, ejectutar hasPathTo por bfs
+    elif method == "bfs":
+        pass
+
+
+def searchPath(analyzer, destStation, method="dfs"):
+    """
+    searchPath retorna el camino de encontrado entre la estacion de inicio
+    y la estacion destino Se debe ejecutar primero la funcion searchPaths
+
+    Args:
+        analyzer (dict): diccionario con las estructuras de datos del modelo
+        destStation (vertice): estacion de destino para el recorrido
+        method (str, optional): algoritmo de busqueda. Por defecto es "dfs"
+
+    Returns:
+        stack: devuele una pila con el camino encontrado en la busqueda.
+    """
+    path = None
+    # TODO mods Lab 11, ejectutar pathTo por dfs
+    if method == "dfs":
+        pass
+    # TODO mods Lab 11, ejectutar pathTo por bfs
+    elif method == "bfs":
+        pass
+    return path
 
 
 def minimumCostPath(analyzer, destStation):
