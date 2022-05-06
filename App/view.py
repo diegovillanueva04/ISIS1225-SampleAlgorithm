@@ -121,7 +121,7 @@ def optionSeven(cont):
           + str(maxdeg))
 
 
-def optionEight(cont, smethod):
+def optionEight(cont, searchMethod):
     # TODO mods Lab 11, conectar con la funcion del controller searchPaths
     pass
 
@@ -151,44 +151,47 @@ def thread_cycle():
         printMenu()
         inputs = input('Seleccione una opción para continuar\n>')
 
-        if int(inputs[0]) == 1:
+        if int(inputs) == 1:
             print("\nInicializando....")
             # cont es el controlador que se usará de acá en adelante
             cont = controller.init()
 
-        elif int(inputs[0]) == 2:
+        elif int(inputs) == 2:
             optionTwo(cont)
 
-        elif int(inputs[0]) == 3:
+        elif int(inputs) == 3:
             optionThree(cont)
 
-        elif int(inputs[0]) == 4:
+        elif int(inputs) == 4:
             msg = "Estación Base: BusStopCode-ServiceNo (Ej: 75009-10): "
             initialStation = input(msg)
             optionFour(cont, initialStation)
 
-        elif int(inputs[0]) == 5:
+        elif int(inputs) == 5:
             destStation = input("Estación destino (Ej: 15151-10): ")
             optionFive(cont, destStation)
 
-        elif int(inputs[0]) == 6:
+        elif int(inputs) == 6:
             destStation = input("Estación destino (Ej: 15151-10): ")
             optionSix(cont, destStation)
 
-        elif int(inputs[0]) == 7:
+        elif int(inputs) == 7:
             optionSeven(cont)
 
-        elif int(inputs[0]) == 8:
+        elif int(inputs) == 8:
             # TODO mods Lab 11, completar inputs opt 8
-            optionEight(cont)
+            searchMethod = input("Seleccione 'dfs' o 'bfs' como algoritmo: ")
+            optionEight(cont, searchMethod)
 
-        elif int(inputs[0]) == 9:
+        elif int(inputs) == 9:
             # TODO mods Lab 11, completar inputs opt 9
-            optionNine(cont)
+            destStation = input("Estación destino (Ej: 15151-10): ")
+            optionNine(cont, destStation)
 
-        elif int(inputs[0]) == 10:
+        elif int(inputs) == 10:
             # TODO mods Lab 11, completar inputs opt 10
-            optionTen(cont)
+            destStation = input("Estación destino (Ej: 15151-10): ")
+            optionTen(cont, destStation)
 
         else:
             sys.exit(0)
