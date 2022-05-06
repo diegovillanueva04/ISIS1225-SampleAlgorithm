@@ -61,8 +61,8 @@ def printMenu():
     print("1- Inicializar Analizador")
     print("2- Cargar información de buses de singapur")
     print("3- Calcular componentes conectados")
-    print("4- Configurar metodo de busqueda ('bfs' o 'dfs'):")
-    print("5- Establecer estación base:")
+    print("4- Establecer estación base:")
+    print("5- Establecer metodo de busqueda y estación base:")
     print("6- Hay camino entre estacion base y estación: ")
     print("7- Ruta de costo mínimo desde la estación base y estación: ")
     print("8- Estación que sirve a mas rutas: ")
@@ -173,10 +173,10 @@ def thread_cycle():
             optionFour(cont, initialStation)
 
         elif int(inputs) == 5:
-            # TODO Lab 11, completar inputs opt 8
+            # TODO Lab 11, completar inputs opt 5
+            searchMethod = input("Seleccione 'dfs' o 'bfs' como algoritmo: ")
             msg = "Estación Base: BusStopCode-ServiceNo (Ej: 75009-10): "
             initialStation = input(msg)
-            searchMethod = input("Seleccione 'dfs' o 'bfs' como algoritmo: ")
             optionFive(cont, initialStation, searchMethod)
 
         elif int(inputs) == 6:
