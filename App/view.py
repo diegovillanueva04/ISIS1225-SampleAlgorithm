@@ -165,10 +165,7 @@ def thread_cycle():
             optionFour(cont, initialStation)
 
         elif int(inputs) == 5:
-            # TODO Lab 11, completar inputs opt 5
-            searchMethod = input("Seleccione 'dfs' o 'bfs' como algoritmo: ")
-            msg = "Estación Base: BusStopCode-ServiceNo (Ej: 75009-10): "
-            initialStation = input(msg)
+            # TODO Lab 11, completar inputs opt 5, searchMethod, initialStation
             pass
 
         elif int(inputs) == 6:
@@ -183,13 +180,11 @@ def thread_cycle():
             optionEight(cont)
 
         elif int(inputs) == 9:
-            # TODO Lab 11, completar inputs opt 9
-            destStation = input("Estación destino (Ej: 15151-10): ")
+            # TODO Lab 11, completar inputs opt 9, destStation
             pass
 
         elif int(inputs) == 10:
-            # TODO Lab 11, completar inputs opt 10
-            destStation = input("Estación destino (Ej: 15151-10): ")
+            # TODO Lab 11, completar inputs opt 10, destStation
             pass
 
         else:
