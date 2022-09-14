@@ -36,7 +36,7 @@ The students edit this section to add their names, Uniandes emails, and specify 
 1. Student No. 2 Name, Student No. 2 Uniandes Email, Student No. 2 owned functionality.
 1. Student No. 3 Name, Student No. 3 Uniandes Email, Student No. 3 owned functionality.
 
-[Back to top](#sample-mvc)
+[Back to top](#sample-algorithm)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -45,7 +45,7 @@ This is a template repository to use in the laboratories in the data structures 
 
 **IMPORTANT** This is a work in progress and is part of a teaching framework for undergraduate college students at Universidad de los Andes. This project Is NOT intended as a full-functional source code project.
 
-[Back to top](#sample-mvc)
+[Back to top](#sample-algorithm)
 
 <!-- STRUCTURE -->
 ### Structure
@@ -57,7 +57,7 @@ This laboratory repository has four main parts:
 1. [Data](./Data) Folder with CSV data files to load into the application. In here the students add the data files provided by the course staff to complete the laboratory.
 1. [Docs](./Docs) Folder with the report, data table and other documentation. In here the students add their project report, data tables and other files to complement their code implementation.
 
-[Back to top](#sample-mvc)
+[Back to top](#sample-algorithm)
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -71,7 +71,7 @@ To use this template, you need to follow the steps below:
 * Implement the missing functions according to the laboratory instructions in the MVC scripts at [App](./App) folder.
 * Complete the laboratory report, record your tests and analysis in the documents at [Docs](./Docs) folder according to the instructions (The report **MUST BE** in PDF format).
 
-[Back to top](#sample-mvc)
+[Back to top](#sample-algorithm)
 
 <!-- CONTACT -->
 ## Contact and support
@@ -83,7 +83,7 @@ For further information and contact, use the following links:
   
 If you require further information, please contact us [via this email](mailto:isis1225@uniandes.edu.co)
 
-[Back to top](#sample-mvc)
+[Back to top](#sample-algorithm)
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -100,7 +100,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`).
 5. Open a Pull Request.
 
-[Back to top](#sample-mvc)
+[Back to top](#sample-algorithm)
 
 <!-- LICENSE -->
 ## License
@@ -112,7 +112,7 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](LICENSE) for more information go to [GNU ORG][gnu-url].
 
-[Back to top](#sample-mvc)
+[Back to top](#sample-algorithm)
 
 <!-- ACKNOWLEDGMENTS -->
 ## Authors and acknowledgment
@@ -121,7 +121,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 * [Santiago Arteaga][phillipus85-url] is a contributor and repository administrator. 
 * [Luis Florez][le99-url] is a contributor and developed examples and tutorials for the library.
 
-[Back to top](#sample-mvc)
+[Back to top](#sample-algorithm)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

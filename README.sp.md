@@ -36,7 +36,7 @@ Los estudiantes editan esta sección para agregar sus nombres, correos electrón
 1. Nombre del estudiante No. 2, Correo electrónico del estudiante No. 2 Uniandes, Funcionalidad propiedad del estudiante No. 2.
 1. Nombre del estudiante No. 3, Correo electrónico del estudiante No. 3 Uniandes, Funcionalidad propiedad del estudiante No. 3.
 
-[Volver al inicio](#sample-mvc)
+[Volver al inicio](#sample-algorithm)
 
 <!-- ABOUT THE PROJECT -->
 ## Acerca del proyecto
@@ -45,7 +45,7 @@ Este repositorio plantilla se usa en los laboratorios del curso de estructuras d
 
 **IMPORTANTE** Este es un trabajo en progreso y es parte de un marco pedagógico para estudiantes universitarios de pregrado en la Universidad de los Andes. Este proyecto NO está pensado como un proyecto de código fuente completamente funcional.
 
-[Volver al inicio](#sample-mvc)
+[Volver al inicio](#sample-algorithm)
 
 <!-- STRUCTURE -->
 ### Estructura
@@ -57,7 +57,7 @@ Este repositorio de laboratorio tiene cuatro partes principales:
 1. [Data](./Data) Carpeta con archivos de datos CSV para cargar en la aplicación. Aquí los estudiantes agregan los archivos de datos proporcionados por el personal del curso para completar el laboratorio.
 1. [Docs](./Docs) Carpeta con el informe, tabla de datos y otra documentación. Aquí los estudiantes agregan su informe de proyecto, tablas de datos y otros archivos para complementar su implementación de código.
 
-[Volver al inicio](#sample-mvc)
+[Volver al inicio](#sample-algorithm)
 
 
 <!-- USAGE EXAMPLES -->
@@ -72,7 +72,7 @@ Para usar esta plantilla, debe seguir los pasos a continuación:
 * Implemente las funciones que faltan de acuerdo con las instrucciones de laboratorio en los scripts MVC en la carpeta [App](./App).
 * Complete el informe de laboratorio, registre sus pruebas y análisis en los documentos en la carpeta [Docs](./Docs) de acuerdo con las instrucciones (El informe **DEBE SER** en formato PDF).
 
-[Volver al inicio](#sample-mvc)
+[Volver al inicio](#sample-algorithm)
 
 <!-- CONTACT -->
 ## Contacto y Soporte
@@ -84,7 +84,7 @@ Para más información y contactarnos, utilice los siguientes enlaces:
   
 Si necesita más información, póngase en contacto con nosotros [en este correo](mailto:isis1225@uniandes.edu.co)
 
-[Volver al inicio](#sample-mvc)
+[Volver al inicio](#sample-algorithm)
 
 <!-- CONTRIBUTING -->
 ## Contribuir
@@ -100,7 +100,7 @@ Si tiene una sugerencia para mejorar el proyecto, bifurque (Fork) el repositorio
 4. Empuje (Push) los cambios a la rama (`git push origin funcionalidad/increibleFuncionalidad `).
 5. Abrir una solicitud de extracción (Pull Request).
 
-[Volver al inicio](#sample-mvc)
+[Volver al inicio](#sample-algorithm)
 
 <!-- LICENSE -->
 ## Licencia
@@ -112,7 +112,7 @@ Este programa es software libre: puede redistribuirlo y/o modificarlo bajo los t
 
 Este programa se distribuye con la esperanza de que sea útil, pero SIN NINGUNA GARANTÍA, sin siquiera la garantía implícita de COMERCIABILIDAD o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Ver el [GNU General Public License](LICENSE) Para obtener más información, vaya a [GNU ORG][gnu-url].
 
-[Volver al inicio](#sample-mvc)
+[Volver al inicio](#sample-algorithm)
 
 <!-- ACKNOWLEDGMENTS -->
 ## Autores y Reconocimiento
@@ -121,7 +121,7 @@ Este programa se distribuye con la esperanza de que sea útil, pero SIN NINGUNA 
 * [Santiago Arteaga][phillipus85-url] es colaborador y administrador de repositorios. 
 * [Luis Florez][le99-url] es colaborador y desarrolló los ejemplos y tutoriales para la librería.
 
-[Volver al inicio](#sample-mvc)
+[Volver al inicio](#sample-algorithm)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
