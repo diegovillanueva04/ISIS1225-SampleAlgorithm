@@ -53,7 +53,7 @@ def DepthFirstSearch(graph, source):
 
         search['visited'] = map.newMap(numelements=g.numVertices(graph),
                                        maptype='PROBING',
-                                       cmpfunction=graph['comparefunction']
+                                       cmpfunction=graph['cmpfunction']
                                        )
 
         map.put(search['visited'], source, {'marked': True, 'edgeTo': None})
