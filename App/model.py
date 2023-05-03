@@ -68,7 +68,7 @@ def newAnalyzer():
         analyzer['connections'] = gr.newGraph(datastructure='ADJ_LIST',
                                               directed=True,
                                               size=14000,
-                                              comparefunction=compareStopIds)
+                                              cmpfunction=compareStopIds)
         return analyzer
     except Exception as exp:
         error.reraise(exp, 'model:newAnalyzer')
