@@ -202,29 +202,7 @@ def minimumCostPath(analyzer, destStation):
     return path
 
 
-def searchPaths(analyzer, initialStation, method):
-    """
-    searchPaths Calcula los caminos posibles desde una estacion de origen
-    y puede utilizar los algoritmos "dfs" o "bfs"
-
-    Args:
-        analyzer (dict): diccionario con las estructuras de datos del modelo
-        originStation (vertice): estacion de origen del recorrido
-        method (str, optional): algoritmo de busqueda. Por defecto es "dfs"
-
-    Returns:
-        dict: devuelve el analyzer del modelo
-    """
-    # TODO Lab 11, ejectutar DepthFirstSearch de dfs
-    if method == "dfs":
-        pass
-    # TODO Lab 11, ejectutar BreadhtFisrtSearch de bfs
-    elif method == "bfs":
-        pass
-    return analyzer
-
-
-def hasSearchPath(analyzer, destStation, method):
+def hasSearchPath(analyzer, initialStation, destStation, method):
     """
     hasSearchPath indica si existe un camino desde la estacion inicial a
     la estación destino. Se debe ejecutar primero la funcion searchPaths()
@@ -234,15 +212,15 @@ def hasSearchPath(analyzer, destStation, method):
         destStation (vertice): estacion de destino para el recorrido
         method (str, optional): algoritmo de busqueda. Por defecto es "dfs"
     """
-    # TODO Lab 11, ejectutar hasPathTo por dfs
+    # TODO Lab 11, inicializar dfs y ejecutar hasPathTo por dfs
     if method == "dfs":
         return None
-    # TODO Lab 11, ejectutar hasPathTo por bfs
+    # TODO Lab 11, inicializar bfs y ejecutar hasPathTo por bfs
     elif method == "bfs":
         return None
 
 
-def searchPathTo(analyzer, destStation, method):
+def searchPathTo(analyzer, initialStation, destStation, method):
     """
     searchPath retorna el camino de encontrado entre la estacion de inicio
     y la estacion destino Se debe ejecutar primero la funcion searchPaths
@@ -256,10 +234,10 @@ def searchPathTo(analyzer, destStation, method):
         stack: devuele una pila con el camino encontrado en la busqueda.
     """
     path = None
-    # TODO Lab 11, ejectutar pathTo por dfs
+    # TODO Lab 11, inicializar dfs y ejectutar pathTo por dfs
     if method == "dfs":
         pass
-    # TODO Lab 11, ejectutar pathTo por bfs
+    # TODO Lab 11, inicializar bfs y  ejectutar pathTo por bfs
     elif method == "bfs":
         pass
     return path

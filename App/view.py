@@ -56,18 +56,17 @@ searchMethod = None
 def printMenu():
     print("\n")
     print("*******************************************")
-    # TODO Lab 11, asegurarse de completar las opciones 4, 9 y 10
+    # TODO Lab 11, asegurarse de completar las opciones 8 y 9
     print("Bienvenido")
     print("1- Inicializar Analizador")
     print("2- Cargar información de buses de singapur")
     print("3- Calcular componentes conectados")
     print("4- Establecer estación base:")
-    print("5- Establecer metodo de busqueda y estación base:")
-    print("6- Hay camino entre estacion base y estación: ")
-    print("7- Ruta de costo mínimo desde la estación base y estación: ")
-    print("8- Estación que sirve a mas rutas: ")
-    print("9- Existe un camino de busqueda entre base y estación: ")
-    print("10- Ruta de busqueda entre la estación base y estación: ")
+    print("5- Hay camino entre estacion base y estación: ")
+    print("6- Ruta de costo mínimo desde la estación base y estación: ")
+    print("7- Estación que sirve a mas rutas: ")
+    print("8- Existe un camino de busqueda entre la estación base y estación destino: ")
+    print("9- Ruta de busqueda entre la estación base y estación destino: ")
     print("0- Salir")
     print("*******************************************")
 
@@ -93,19 +92,14 @@ def optionFour(cont, initialStation):
     print("FIN!")
 
 
-def optionFive(cont, initialStation, searchMethod):
-    # TODO Lab 11, conectar con la funcion del controller searchPaths
-    pass
-
-
-def optionSix(cont, destStation):
+def optionFive(cont, destStation):
     haspath = controller.hasPath(cont, destStation)
     print('Hay camino entre la estación base : ' +
           'y la estación: ' + destStation + ': ')
     print(haspath)
 
 
-def optionSeven(cont, destStation):
+def optionSix(cont, destStation):
     path = controller.minimumCostPath(cont, destStation)
     if path is not None:
         pathlen = stack.size(path)
@@ -117,20 +111,20 @@ def optionSeven(cont, destStation):
         print('No hay camino')
 
 
-def optionEight(cont):
+def optionSeven(cont):
     maxvert, maxdeg = controller.servedRoutes(cont)
     print('Estación: ' + maxvert + '  Total rutas servidas: '
           + str(maxdeg))
 
 
-def optionNine(cont, destStation, searchMethod):
-    # TODO Lab 11, conectar con la funcion del controller hasSearchPath
+def optionEight(cont,initialStation, destStation, searchMethod):
+    # TODO Lab 11, conectar con la funcion del controller hasSearchPath e imprimir los resultados
     haspath = None
     print(haspath)
 
 
-def optionTen(cont, destStation, searchMethod):
-    # TODO Lab 11, conectar con la funcion del controller searchPath
+def optionNine(cont,initialStation, destStation, searchMethod):
+    # TODO Lab 11, conectar con la funcion del controller searchPath e imprimir los resultados
     path = None
     if path is not None:
         pass
@@ -165,26 +159,22 @@ def thread_cycle():
             optionFour(cont, initialStation)
 
         elif int(inputs) == 5:
-            # TODO Lab 11, completar inputs opt 5, searchMethod, initialStation
-            pass
+            destStation = input("Estación destino (Ej: 15151-10): ")
+            optionFive(cont, destStation)
 
         elif int(inputs) == 6:
             destStation = input("Estación destino (Ej: 15151-10): ")
             optionSix(cont, destStation)
 
         elif int(inputs) == 7:
-            destStation = input("Estación destino (Ej: 15151-10): ")
-            optionSeven(cont, destStation)
+            optionSeven(cont)
 
         elif int(inputs) == 8:
-            optionEight(cont)
-
-        elif int(inputs) == 9:
-            # TODO Lab 11, completar inputs opt 9, destStation
+            # TODO Lab 11, completar inputs opt 8: initialStation, destStation, searchMethod
             pass
 
-        elif int(inputs) == 10:
-            # TODO Lab 11, completar inputs opt 10, destStation
+        elif int(inputs) == 9:
+            # TODO Lab 11, completar inputs opt 9: initialStation, destStation, searchMethod
             pass
 
         else:
