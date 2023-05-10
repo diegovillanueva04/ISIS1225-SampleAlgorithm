@@ -170,7 +170,6 @@ def thread_cycle():
             searchMethod = input("Seleccione 'dfs' o 'bfs' como algoritmo: ") 
             msg = "Estación Base: BusStopCode-ServiceNo (Ej: 75009-10): " 
             initialStation = input(msg)
-            pass    
 
         elif int(inputs) == 6:
             destStation = input("Estación destino (Ej: 15151-10): ")
@@ -195,7 +194,6 @@ def thread_cycle():
             searchMethod = input("Seleccione 'dfs' o 'bfs' como algoritmo: ") 
             destStation = input("Estación destino (Ej: 15151-10): ")
             optionTen(cont, destStation, searchMethod)
-            pass
 
         else:
             sys.exit(0)
