@@ -95,6 +95,7 @@ def optionFour(cont, initialStation):
 
 def optionFive(cont, initialStation, searchMethod):
     # TODO Lab 11, conectar con la funcion del controller searchPaths
+    controller.searchPaths(cont, initialStation, searchMethod)
     pass
 
 
@@ -125,15 +126,15 @@ def optionEight(cont):
 
 def optionNine(cont, destStation, searchMethod):
     # TODO Lab 11, conectar con la funcion del controller hasSearchPath
-    haspath = None
+    haspath = controller.hasSearchPath(cont, destStation, searchMethod)
     print(haspath)
 
 
 def optionTen(cont, destStation, searchMethod):
     # TODO Lab 11, conectar con la funcion del controller searchPath
-    path = None
+    path = controller.searchPaths(cont, destStation, searchMethod)
     if path is not None:
-        pass
+        print(path)
     else:
         print('No hay camino')
 
@@ -165,8 +166,11 @@ def thread_cycle():
             optionFour(cont, initialStation)
 
         elif int(inputs) == 5:
-            # TODO Lab 11, completar inputs opt 5, searchMethod, initialStation
-            pass
+    # TODO Lab 11, completar inputs opt 5
+            searchMethod = input("Seleccione 'dfs' o 'bfs' como algoritmo: ") 
+            msg = "Estación Base: BusStopCode-ServiceNo (Ej: 75009-10): " 
+            initialStation = input(msg)
+            pass    
 
         elif int(inputs) == 6:
             destStation = input("Estación destino (Ej: 15151-10): ")
@@ -180,11 +184,17 @@ def thread_cycle():
             optionEight(cont)
 
         elif int(inputs) == 9:
-            # TODO Lab 11, completar inputs opt 9, destStation
+            # TODO Lab 11, completar inputs opt 9, destStation  
+            searchMethod = input("Seleccione 'dfs' o 'bfs' como algoritmo: ") 
+            destStation = input("Estación destino (Ej: 15151-10): ")
+            optionNine(cont, destStation, searchMethod)
             pass
 
         elif int(inputs) == 10:
             # TODO Lab 11, completar inputs opt 10, destStation
+            searchMethod = input("Seleccione 'dfs' o 'bfs' como algoritmo: ") 
+            destStation = input("Estación destino (Ej: 15151-10): ")
+            optionTen(cont, destStation, searchMethod)
             pass
 
         else:
